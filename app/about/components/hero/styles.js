@@ -38,7 +38,7 @@ export const RevealImg = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: ${({ theme }) => `rgb(${theme.body})`};
+  background-color: ${({ theme }) => `rgb(${theme.accent1})`};
   z-index: ${Z_INDEX.hero};
   /* border-radius: 2vw; */
   transform-origin: bottom center;
