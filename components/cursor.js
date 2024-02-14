@@ -42,13 +42,12 @@ const Cursor = () => {
     }}>
       <div style={{
         zIndex: 1,
-        /* color: 'transparent', */
         mixBlendMode: 'screen',
-        /* filter: 'drop-shadow(2px 4px 6px black)', */
         backgroundImage: "url('/gif.gif')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         position: 'absolute',
+        overflow: 'hidden',
         top: 0,
         left: 0,
         width: '100vw',

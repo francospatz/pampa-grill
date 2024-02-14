@@ -48,6 +48,8 @@ export const Display = css`
   font-weight: 400;
   line-height: 1.1;
   letter-spacing: -0.4vw;
+  color: ${({ theme }) => `rgb(${theme.text})`};
+  mix-blend-mode: difference;
 
   ${media.desktop`
     font-size: 10vw;

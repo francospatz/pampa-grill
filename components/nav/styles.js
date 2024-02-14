@@ -10,9 +10,10 @@ export const HeaderWrapper = styled.header`
   width: 100%;
   z-index: ${Z_INDEX.nav};
   color: ${({ theme }) => `rgb(${theme.text})`};
+  mix-blend-mode: difference;
   padding: 2vw 0;
   opacity: 0;
-  mix-blend-mode: difference;
+  
 
   ${media.tablet`padding: 1.5rem 0;`}
 
