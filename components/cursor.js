@@ -11,7 +11,36 @@ const Cursor = () => {
 
   useEffect(() => {
 
-    if (touchDevice) return null
+    if (touchDevice) return (
+      <div style={{
+        margin: 0,
+        padding: 0,
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: '100%',
+        height: '100%',
+      }}>
+        <div style={{
+          zIndex: 1,
+          mixBlendMode: 'screen',
+          backgroundImage: "url('/gif.gif')",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          position: 'absolute',
+          overflow: 'hidden',
+          top: 0,
+          left: 0,
+          width: '100vw',
+          height: '100vh',
+        }}>
+
+        </div>
+
+      </div>
+
+    )
     else {
       webGLFluidEnhanced.simulation(canvasRef.current, {
         PRESSURE: 0.2,
@@ -27,7 +56,36 @@ const Cursor = () => {
     }
   }, [touchDevice])
 
-  if (touchDevice) return null
+  if (touchDevice) return (
+    <div style={{
+      margin: 0,
+      padding: 0,
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+      width: '100%',
+      height: '100%',
+    }}>
+      <div style={{
+        zIndex: 1,
+        mixBlendMode: 'screen',
+        backgroundImage: "url('/gif.gif')",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        position: 'absolute',
+        overflow: 'hidden',
+        top: 0,
+        left: 0,
+        width: '100vw',
+        height: '100vh',
+      }}>
+
+      </div>
+
+    </div>
+
+  )
 
   return (
     <div style={{
