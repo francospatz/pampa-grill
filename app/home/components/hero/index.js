@@ -118,7 +118,7 @@ const Hero = () => {
                     $dark
                     className="reveal-hero-2"
                   >
-                    IG
+                    EN
                   </CustomLink>
                 </div>
                 <div className="overflow">
@@ -128,19 +128,10 @@ const Hero = () => {
                     $dark
                     className="reveal-hero-2"
                   >
-                    TA
+                    ES
                   </CustomLink>
                 </div>
-                <div className="overflow">
-                  <CustomLink
-                    to="https://www.thefork.es/restaurante/pampa-grill-malaga-r363341/menu"
-                    target="_blank"
-                    $dark
-                    className="reveal-hero-2"
-                  >
-                    TF
-                  </CustomLink>
-                </div>
+
 
               </LinkWrapper>
 
