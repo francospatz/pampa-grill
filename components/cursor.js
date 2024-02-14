@@ -35,7 +35,6 @@ const Cursor = () => {
           width: '100vw',
           height: '100vh',
         }}>
-
         </div>
 
       </div>
@@ -88,16 +87,7 @@ const Cursor = () => {
   )
 
   return (
-    <div style={{
-      margin: 0,
-      padding: 0,
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      width: '100%',
-      height: '100%',
-    }}>
+    <>
       <div style={{
         zIndex: 1,
         mixBlendMode: 'screen',
@@ -110,8 +100,8 @@ const Cursor = () => {
         left: 0,
         width: '100vw',
         height: '100vh',
+        filter: 'blur(2px)',
       }}>
-
       </div>
       <canvas
         ref={canvasRef}
@@ -129,7 +119,7 @@ const Cursor = () => {
         }}
       />
 
-    </div>
+    </>
   )
 }
 
