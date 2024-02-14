@@ -113,8 +113,8 @@ const Hero = () => {
               <LinkWrapper className="enabled">
                 <div className="overflow">
                   <CustomLink
-                    to="https://www.instagram.com/pampagrillmalaga/"
-                    target="_blank"
+                    to="/"
+
                     $dark
                     className="reveal-hero-2"
                   >
@@ -123,8 +123,8 @@ const Hero = () => {
                 </div>
                 <div className="overflow">
                   <CustomLink
-                    to="https://www.tripadvisor.es/Restaurant_Review-g187438-d13200317-Reviews-Pampa_Grill_Malaga-Malaga_Costa_del_Sol_Province_of_Malaga_Andalucia.html"
-                    target="_blank"
+                    to="/"
+
                     $dark
                     className="reveal-hero-2"
                   >
