@@ -72,7 +72,12 @@ const Nav = () => {
           </div>
           <LinksWrapper>
             <div className="overflow">
-              <CustomLink className="reveal-nav-1 enabled" href="/about">
+              <CustomLink className="reveal-nav-1 enabled" href="/about"
+                onClick={(e) => {
+                  e.preventDefault()
+                  if (path === '/about') lenis.scrollTo(0)
+                  else animatePageOut('/about', router, path)
+                }}>
                 About
               </CustomLink>
             </div>
