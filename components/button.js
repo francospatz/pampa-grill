@@ -17,10 +17,10 @@ const ButtonWrapper = styled.a`
   display: block;
   position: relative;
   padding: 0.4vw 2.5vw;
-  border-radius: 35vw;
+  border-radius: 0;
   border: 0.2vw solid
     ${({ $reverse, theme }) =>
-      $reverse ? `rgb(${theme.gray})` : `rgb(${theme.text})`};
+    $reverse ? `rgb(${theme.gray})` : `rgb(${theme.text})`};
   color: ${({ $reverse, theme }) =>
     $reverse ? `rgb(${theme.gray})` : `rgb(${theme.text})`};
   text-decoration: none;
@@ -39,7 +39,7 @@ const ButtonWrapper = styled.a`
     background-color: ${({ theme }) => `rgb(${theme.text})`};
     transform-origin: center bottom;
     inset: 0px;
-    border-radius: 35vw;
+    border-radius: 0;
     z-index: -1;
     mix-blend-mode: difference;
 
@@ -48,7 +48,7 @@ const ButtonWrapper = styled.a`
 
   ${media.desktop`
   padding: 0.5rem 2rem;
-  border-radius: 35px;
+  border-radius: 0;
   `}
 `
 const ButtonStyle = css`
@@ -62,6 +62,7 @@ const ButtonStyle = css`
   pointer-events: all;
   text-transform: uppercase;
   mix-blend-mode: difference;
+  
 
   &:disabled {
     background-color: var(--black);

@@ -38,10 +38,15 @@ const GlobalStyle = createGlobalStyle`
     background:  ${({ theme }) => `rgb(${theme.black})`};
     color: ${({ theme }) => `rgb(${theme.text})`};
     overscroll-behavior-y: none;
+    pointer-events: auto;
   }
 
   main {
     overflow-x: hidden;
+    pointer-events: auto;
+  }
+
+  .exclude {
     pointer-events: auto;
   }
 

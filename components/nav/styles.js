@@ -2,6 +2,7 @@
 
 import styled from 'styled-components'
 import { GridWrapper, Z_INDEX, media } from 'styles'
+import React from 'react'
 
 export const HeaderWrapper = styled.header`
   position: fixed;
@@ -34,6 +35,85 @@ export const LinksWrapper = styled.nav`
   display: flex;
   gap: 2vw;
   align-items: center;
-  
+  justify-content: end;
   ${media.tablet`gap: 1rem;`}
 `
+export const StyledMenuContent = styled.div`
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100% ;
+  /* heihth: 100%; */
+  //heigth: 100vh !important;
+  //pointer-events: auto !important
+  overflow-y: hidden;
+  position: fixed;
+  z-index: 9998;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  opacity: 0;
+`;
+
+export const StyledMenuList = styled.ul`
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  jusify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  li {
+    width: fit-content;
+    overflow: hidden;
+  }
+`;
+
+export const StyledMenuLink = styled.a`
+  font-weight: 700;
+  font-size: 5rem;
+  text-transform: uppercase;
+  display: inline-block;
+  transform: translateY(0);
+  text-decoration: none;
+  color: ${(props) => (props.acolor)};
+  -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out; /*gecko*/
+  -ms-transition: all .5s ease-out; /*IE10*/
+  -o-transition: all .5s ease-out; /*opera 11.10+*/
+  -pie-transition: all .5s ease-out; /*PIE*/
+  transition: all .5s ease-out;
+  padding-top: 1rem;
+    padding-bottom: 1rem;
+  
+  @media (max-width: 1024px) {
+    
+    font-size: 4rem;
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 3rem;
+  }
+
+  @media (max-width: 480px) {
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    font-size: 2.2rem;
+  }
+
+  &:hover {
+    letter-spacing: 2px;
+    //color: red;
+    /* -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff; */
+  }
+
+  
+`;
+
+

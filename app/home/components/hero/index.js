@@ -60,16 +60,16 @@ const Hero = () => {
           },
           0.5,
         )
-        .from(
-          gsap.utils.toArray('.reveal-hero-4'),
-          {
-            yPercent: 100,
-            duration: 2,
-            stagger: 0.2,
-            ease: 'power4.out',
-          },
-          0.5,
-        )
+      /* .from(
+        gsap.utils.toArray('.reveal-hero-4'),
+        {
+          yPercent: 100,
+          duration: 2,
+          stagger: 0.2,
+          ease: 'power4.out',
+        },
+        0.5,
+      ) */
     })
 
     return () => ctx.revert()
@@ -149,9 +149,9 @@ const Hero = () => {
                 ))}
               </ParagraphWrapper>
 
-              <div className="overflow">
+              {/* <div className="overflow">
                 <div className="reveal-hero-4">Scroll down</div>
-              </div>
+              </div> */}
             </CustomGridWrapper>
           </Container>
         </FooterWrapper>
