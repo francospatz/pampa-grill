@@ -14,7 +14,6 @@ export const HeaderWrapper = styled.header`
   mix-blend-mode: difference;
   padding: 2vw 0;
   opacity: 0;
-  
 
   ${media.tablet`padding: 1.5rem 0;`}
 
@@ -43,7 +42,7 @@ export const StyledMenuContent = styled.div`
   top: 0;
   bottom: 0;
   right: 0;
-  width: 100% ;
+  width: 100%;
   /* heihth: 100%; */
   //heigth: 100vh !important;
   //pointer-events: auto !important
@@ -55,7 +54,7 @@ export const StyledMenuContent = styled.div`
   justify-content: center;
   background-color: black;
   opacity: 0;
-`;
+`
 
 export const StyledMenuList = styled.ul`
   list-style: none;
@@ -69,7 +68,7 @@ export const StyledMenuList = styled.ul`
     width: fit-content;
     overflow: hidden;
   }
-`;
+`
 
 export const StyledMenuLink = styled.a`
   font-weight: 700;
@@ -78,18 +77,17 @@ export const StyledMenuLink = styled.a`
   display: inline-block;
   transform: translateY(0);
   text-decoration: none;
-  color: ${(props) => (props.acolor)};
-  -webkit-transition: all .5s ease-out;
-  -moz-transition: all .5s ease-out; /*gecko*/
-  -ms-transition: all .5s ease-out; /*IE10*/
-  -o-transition: all .5s ease-out; /*opera 11.10+*/
-  -pie-transition: all .5s ease-out; /*PIE*/
-  transition: all .5s ease-out;
+  color: ${(props) => props.acolor};
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out; /*gecko*/
+  -ms-transition: all 0.5s ease-out; /*IE10*/
+  -o-transition: all 0.5s ease-out; /*opera 11.10+*/
+  -pie-transition: all 0.5s ease-out; /*PIE*/
+  transition: all 0.5s ease-out;
   padding-top: 1rem;
-    padding-bottom: 1rem;
-  
+  padding-bottom: 1rem;
+
   @media (max-width: 1024px) {
-    
     font-size: 4rem;
   }
 
@@ -112,8 +110,54 @@ export const StyledMenuLink = styled.a`
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fff; */
   }
+`
 
-  
-`;
+export const ToggleBtn = styled.div`
+  display: flex;
+  justify-content: flex-end;
+`
 
+export const Burger = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.75em 2em 1.5em 2em;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 0.25em;
+  outline: none;
+  height: 20px;
+  width: 28px;
+  border: none;
+  transition: all 250ms ease-out;
+  cursor: pointer;
 
+  &:before {
+    content: "";
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    background: #fff;
+    transition: all 250ms ease-out;
+    will-change: transform;
+    transform: translateY(-3px);
+  }
+
+  &:after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    background: #fff;
+    transition: all 250ms ease-out;
+    will-change: transform;
+    transform: translateY(3px);
+  }
+
+  &.active:before {
+    transform: translateY(0) rotate(45deg);
+  }
+
+  &.active:after {
+    transform: translateY(0) rotate(-45deg);
+  }
+`
