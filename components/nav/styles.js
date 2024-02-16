@@ -128,7 +128,7 @@ export const Burger = styled.div`
   height: 20px;
   width: 28px;
   border: none;
-  transition: all 250ms ease-out;
+  transition: all 400ms ease-out;
   cursor: pointer;
 
   &:before {
@@ -137,7 +137,7 @@ export const Burger = styled.div`
     height: 2px;
     position: absolute;
     background: #fff;
-    transition: all 250ms ease-out;
+    transition: all 400ms ease-out;
     will-change: transform;
     transform: translateY(-3px);
   }
@@ -148,7 +148,7 @@ export const Burger = styled.div`
     height: 2px;
     position: absolute;
     background: #fff;
-    transition: all 250ms ease-out;
+    transition: all 400ms ease-out;
     will-change: transform;
     transform: translateY(3px);
   }
