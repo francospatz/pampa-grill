@@ -16,6 +16,7 @@ import gsap from 'gsap'
 import { CustomLink } from 'components'
 import { useRef } from 'react'
 import Div100vh from 'react-div-100vh'
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
 const Hero = () => {
   const sectionRef = useRef()
@@ -72,19 +73,33 @@ const Hero = () => {
       ) */
     })
 
+    /*  gsap.registerPlugin(ScrollTrigger);
+     ScrollTrigger.create({
+       animation: gsap.from(".text-logo", {
+         y: "50vh",
+         scale: 6,
+         yPercent: -50,
+       }),
+       scrub: true,
+       trigger: ".logo-scroll-trigger",
+       start: "top bottom",
+       endTrigger: ".logo-scroll-trigger",
+       end: "top center",
+     });
+  */
     return () => ctx.revert()
   }, [])
 
-  return (
+  return (<>
     <Div100vh>
       <SectionWrapper ref={sectionRef}>
         <Container>
           <ContentWrapper>
-            <TopLine>
-              <div className=" offset">
-                <div className="reveal-hero-1 enabled">Pampa</div>
+            <TopLine className='text-logo'>
+              <div className="offset">
+                <div className="reveal-hero-1 enabled">PAMPA</div>
               </div>
-              <div className="">
+              <div className="offset">
                 <div className="reveal-hero-1 enabled">—GRILL</div>
               </div>
             </TopLine>
@@ -157,10 +172,10 @@ const Hero = () => {
         </FooterWrapper>
       </SectionWrapper>
     </Div100vh>
+    <div className='logo-scroll-trigger'>
+    </div>
+  </>
   )
 }
 
 export default Hero
-
-
-// HACER ANIMACIÓN LOGO PAMPA SCROLL: carpeta con data -> logo shrink on scroll

@@ -105,7 +105,6 @@ const Nav = () => {
                   onClick={(e) => {
                     e.preventDefault()
                     isReversed ? handleActivate() : '';
-
                     if (path === '/') setTimeout(lenis.scrollTo(0), 1000)
                     else animatePageOut('/', router, path)
                   }}
