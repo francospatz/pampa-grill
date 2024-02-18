@@ -115,6 +115,7 @@ export const StyledMenuLink = styled.a`
 export const ToggleBtn = styled.div`
   display: flex;
   justify-content: flex-end;
+  cursor: pointer !important;
 `
 
 export const Burger = styled.div`
@@ -130,7 +131,7 @@ export const Burger = styled.div`
   border: none;
   transition: all 400ms ease-out;
   transition-delay: 0.5s;
-  cursor: pointer;
+  cursor: pointer !important;
 
   &:before {
     content: "";
