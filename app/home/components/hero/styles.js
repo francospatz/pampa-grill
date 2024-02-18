@@ -89,3 +89,13 @@ export const ParagraphWrapper = styled.div`
     text-transform: uppercase;
   }
 `
+
+export const AnimatedLogo = styled.div`
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Cosi Times";
+  padding: 1em;
+  z-index: 1000;
+`

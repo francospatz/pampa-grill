@@ -104,7 +104,8 @@ const Nav = () => {
                   className="logo enabled"
                   onClick={(e) => {
                     e.preventDefault()
-                    handleActivate()
+                    isReversed ? handleActivate() : '';
+
                     if (path === '/') setTimeout(lenis.scrollTo(0), 1000)
                     else animatePageOut('/', router, path)
                   }}
@@ -174,7 +175,7 @@ const Nav = () => {
           <li>
             <StyledMenuLink
               onMouseEnter={() => {
-                setHoverColor('#484847')
+                setHoverColor('#746658')
                 setSelf(0)
               }}
               onMouseLeave={() => {
@@ -198,7 +199,7 @@ const Nav = () => {
           <li>
             <StyledMenuLink
               onMouseEnter={() => {
-                setHoverColor('#484847')
+                setHoverColor('#746658')
                 setSelf(1)
               }}
               onMouseLeave={() => {
@@ -222,7 +223,7 @@ const Nav = () => {
           <li>
             <StyledMenuLink
               onMouseEnter={() => {
-                setHoverColor('#484847')
+                setHoverColor('#746658')
                 setSelf(2)
               }}
               onMouseLeave={() => {
@@ -246,7 +247,7 @@ const Nav = () => {
           <li>
             <StyledMenuLink
               onMouseEnter={() => {
-                setHoverColor('#484847')
+                setHoverColor('#746658')
                 setSelf(3)
               }}
               onMouseLeave={() => {
@@ -270,7 +271,7 @@ const Nav = () => {
           <li>
             <StyledMenuLink
               onMouseEnter={() => {
-                setHoverColor('#484847')
+                setHoverColor('#746658')
                 setSelf(4)
               }}
               onMouseLeave={() => {

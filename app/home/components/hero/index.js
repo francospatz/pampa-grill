@@ -161,3 +161,6 @@ const Hero = () => {
 }
 
 export default Hero
+
+
+// HACER ANIMACIÓN LOGO PAMPA SCROLL: carpeta con data -> logo shrink on scroll

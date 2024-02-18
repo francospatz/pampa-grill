@@ -99,7 +99,7 @@ export const StyledMenuLink = styled.a`
 
   @media (max-width: 480px) {
     padding-top: 1.8rem;
-    padding-bottom: 1.8rem;
+    padding-bottom: 1.1rem;
     font-size: 2.2rem;
   }
 
@@ -129,6 +129,7 @@ export const Burger = styled.div`
   width: 28px;
   border: none;
   transition: all 400ms ease-out;
+  transition-delay: 0.5s;
   cursor: pointer;
 
   &:before {
@@ -138,6 +139,7 @@ export const Burger = styled.div`
     position: absolute;
     background: #fff;
     transition: all 400ms ease-out;
+    transition-delay: 0.5s;
     will-change: transform;
     transform: translateY(-3px);
   }
@@ -149,15 +151,16 @@ export const Burger = styled.div`
     position: absolute;
     background: #fff;
     transition: all 400ms ease-out;
+    transition-delay: 0.5s;
     will-change: transform;
     transform: translateY(3px);
   }
 
   &.active:before {
-    transform: translateY(0) rotate(45deg);
+    transform: translateY(0) rotate(35deg);
   }
 
   &.active:after {
-    transform: translateY(0) rotate(-45deg);
+    transform: translateY(0) rotate(-35deg);
   }
 `
