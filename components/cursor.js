@@ -34,6 +34,7 @@ const Cursor = () => {
           left: 0,
           width: '100vw',
           height: '100vh',
+          filter: 'blur(7px)',
         }}>
         </div>
 
@@ -78,6 +79,7 @@ const Cursor = () => {
         left: 0,
         width: '100vw',
         height: '100vh',
+        filter: 'blur(7px)',
       }}>
 
       </div>
@@ -100,7 +102,7 @@ const Cursor = () => {
         left: 0,
         width: '100vw',
         height: '100vh',
-        filter: 'blur(2px)',
+        filter: 'blur(7px)',
       }}>
       </div>
       <canvas

@@ -13,8 +13,9 @@ const StyledLink = styled.a`
   display: inline-flex;
   flex-direction: column;
   text-decoration: none;
+  //mix-blend-mode: difference;
   color: ${({ $dark, theme }) =>
-    $dark ? `rgb(${theme.gray})` : `rgb(${theme.text})`};
+    $dark ? `rgb(${theme.black})` : `rgb(${theme.text})`};
   cursor: pointer;
   position: relative;
   overflow: hidden;

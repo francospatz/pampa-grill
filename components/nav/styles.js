@@ -11,7 +11,7 @@ export const HeaderWrapper = styled.header`
   width: 100%;
   z-index: ${Z_INDEX.nav};
   color: ${({ theme }) => `rgb(${theme.text})`};
-  //mix-blend-mode: difference;
+  mix-blend-mode: difference;
   padding: 2vw 0;
   //opacity: 0;
 
@@ -53,7 +53,7 @@ export const StyledMenuContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #C89868;
+  background-color: black;
   opacity: 0;
 `
 

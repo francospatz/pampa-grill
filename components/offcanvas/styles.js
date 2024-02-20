@@ -11,8 +11,8 @@ export const StyledMenuContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
-  opacity: 0;
+  /* background-color: black;
+  opacity: 0; */
 `;
 
 export const StyledMenuList = styled.ul`
