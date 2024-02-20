@@ -89,7 +89,7 @@ const Nav = () => {
     setIsReversed(!isReversed)
   }
 
-  const [hoverColor, setHoverColor] = useState('#FCF9F0')
+  const [hoverColor, setHoverColor] = useState('#242423')
   const [self, setSelf] = useState(null)
 
   return (

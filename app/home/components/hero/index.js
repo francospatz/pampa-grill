@@ -97,10 +97,10 @@ const Hero = () => {
           <ContentWrapper>
             <TopLine className='text-logo'>
               <div className="offset">
-                <div className="reveal-hero-1 enabled">PAMPA</div>
+                <div className="reveal-hero-1 enabled">PAMPA —</div>
               </div>
               <div className="offset">
-                <div className="reveal-hero-1 enabled">—GRILL</div>
+                <div className="reveal-hero-1 enabled">— GRILL</div>
               </div>
             </TopLine>
 

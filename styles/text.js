@@ -49,7 +49,7 @@ export const Display = css`
   line-height: 1.1;
   letter-spacing: -0.4vw;
   color: ${({ theme }) => `rgb(${theme.text})`};
-  mix-blend-mode: difference;
+  //mix-blend-mode: difference;
 
   ${media.desktop`
     font-size: 10vw;

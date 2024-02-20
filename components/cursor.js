@@ -25,9 +25,9 @@ const Cursor = () => {
         <div style={{
           zIndex: 1,
           mixBlendMode: 'screen',
-          /*  backgroundImage: "url('/gif.gif')",
-           backgroundRepeat: "no-repeat",
-           backgroundSize: "cover", */
+          backgroundImage: "url('/gif.gif')",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
           position: 'absolute',
           overflow: 'hidden',
           top: 0,
@@ -68,10 +68,10 @@ const Cursor = () => {
     }}>
       <div style={{
         zIndex: 1,
-        /* mixBlendMode: 'screen',
+        mixBlendMode: 'screen',
         backgroundImage: "url('/gif.gif')",
         backgroundRepeat: "no-repeat",
-        backgroundSize: "cover", */
+        backgroundSize: "cover",
         position: 'absolute',
         overflow: 'hidden',
         top: 0,
@@ -91,9 +91,9 @@ const Cursor = () => {
       <div style={{
         zIndex: 1,
         mixBlendMode: 'screen',
-        /*  backgroundImage: "url('/gif.gif')",
-         backgroundRepeat: "no-repeat",
-         backgroundSize: "cover", */
+        backgroundImage: "url('/gif.gif')",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
         position: 'absolute',
         overflow: 'hidden',
         top: 0,
