@@ -21,9 +21,9 @@ export const HeaderWrapper = styled.header`
     mix-blend-mode: difference;
     text-transform: uppercase;
   }
-  .reveal-nav-2 {
+  /* .reveal-nav-2 {
     ${media.tablet`display: none;`}
-  }
+  } */
 `
 export const CustomGridWrapper = styled(GridWrapper)`
   align-items: center;
