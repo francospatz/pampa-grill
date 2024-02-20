@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react'
 import { ThemeProvider } from 'styled-components'
-import { Footer, Nav, Scrollbar, TransitionElement, Offcanvas } from 'components'
+import { Footer, Nav, Scrollbar, TransitionElement } from 'components'
 import { useIsTouchDevice } from 'hooks'
 import { Lenis } from '@studio-freight/react-lenis'
 import Tempus from '@studio-freight/tempus'
