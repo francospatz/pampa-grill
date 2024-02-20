@@ -73,20 +73,20 @@ const Hero = () => {
       ) */
     })
 
-    /* gsap.registerPlugin(ScrollTrigger);
-    ScrollTrigger.create({
-      animation: gsap.from(".text-logo", {
-        y: "50vh",
-        scale: 6,
-        yPercent: -50,
-      }),
-      scrub: true,
-      trigger: ".logo-scroll-trigger",
-      start: "top bottom",
-      endTrigger: ".logo-scroll-trigger",
-      end: "top center",
-    }); */
-
+    /*  gsap.registerPlugin(ScrollTrigger);
+     ScrollTrigger.create({
+       animation: gsap.from(".text-logo", {
+         y: "50vh",
+         scale: 6,
+         yPercent: -50,
+       }),
+       scrub: true,
+       trigger: ".logo-scroll-trigger",
+       start: "top bottom",
+       endTrigger: ".logo-scroll-trigger",
+       end: "top center",
+     });
+  */
     return () => ctx.revert()
   }, [])
 
@@ -97,20 +97,14 @@ const Hero = () => {
           <ContentWrapper>
             <TopLine className='text-logo'>
               <div className="offset">
-                <div className="reveal-hero-1 enabled">Pampa Grill</div>
+                <div className="reveal-hero-1 enabled">PAMPA</div>
               </div>
-              {/* <div className="offset">
-                <div className="reveal-hero-1 enabled">GRILL</div>
-              </div> */}
+              <div className="offset">
+                <div className="reveal-hero-1 enabled">—GRILL</div>
+              </div>
             </TopLine>
 
-            {/*  <BottomLine>
-              <div className="">
-                <div className="reveal-hero-1 enabled">Málaga</div>
-              </div>
-            </BottomLine> */}
           </ContentWrapper>
-
           <ParagraphWrapper>
             {/*  {line1.split(' ').map((word, index) => (
               <div className="overflow" key={index}>
@@ -174,7 +168,8 @@ const Hero = () => {
         </FooterWrapper>
       </SectionWrapper>
     </Div100vh>
-
+    <div className='logo-scroll-trigger'>
+    </div>
   </>
   )
 }

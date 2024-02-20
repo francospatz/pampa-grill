@@ -89,7 +89,7 @@ const Nav = () => {
     setIsReversed(!isReversed)
   }
 
-  const [hoverColor, setHoverColor] = useState('black')
+  const [hoverColor, setHoverColor] = useState('#FCF9F0')
   const [self, setSelf] = useState(null)
 
   return (
@@ -144,14 +144,14 @@ const Nav = () => {
           <li>
             <StyledMenuLink
               onMouseEnter={() => {
-                setHoverColor('#746658')
+                setHoverColor('#242423')
                 setSelf(0)
               }}
               onMouseLeave={() => {
-                setHoverColor('black')
+                setHoverColor('#FCF9F0')
                 setSelf(null)
               }}
-              acolor={self === 0 ? 'black' : hoverColor}
+              acolor={self === 0 ? '#FCF9F0' : hoverColor}
               ref={(el) => (linkRefs.current[0] = el)}
               onClick={(e) => {
                 handleActivate()
@@ -168,14 +168,14 @@ const Nav = () => {
           <li>
             <StyledMenuLink
               onMouseEnter={() => {
-                setHoverColor('#746658')
+                setHoverColor('#242423')
                 setSelf(1)
               }}
               onMouseLeave={() => {
-                setHoverColor('black')
+                setHoverColor('#FCF9F0')
                 setSelf(null)
               }}
-              acolor={self === 1 ? 'black' : hoverColor}
+              acolor={self === 1 ? '#FCF9F0' : hoverColor}
               ref={(el) => (linkRefs.current[1] = el)}
               onClick={(e) => {
                 handleActivate()
@@ -192,14 +192,14 @@ const Nav = () => {
           <li>
             <StyledMenuLink
               onMouseEnter={() => {
-                setHoverColor('#746658')
+                setHoverColor('#242423')
                 setSelf(2)
               }}
               onMouseLeave={() => {
-                setHoverColor('black')
+                setHoverColor('#FCF9F0')
                 setSelf(null)
               }}
-              acolor={self === 2 ? 'black' : hoverColor}
+              acolor={self === 2 ? '#FCF9F0' : hoverColor}
               ref={(el) => (linkRefs.current[2] = el)}
               onClick={(e) => {
                 handleActivate()
@@ -216,14 +216,14 @@ const Nav = () => {
           <li>
             <StyledMenuLink
               onMouseEnter={() => {
-                setHoverColor('#746658')
+                setHoverColor('#242423')
                 setSelf(3)
               }}
               onMouseLeave={() => {
-                setHoverColor('black')
+                setHoverColor('#FCF9F0')
                 setSelf(null)
               }}
-              acolor={self === 3 ? 'black' : hoverColor}
+              acolor={self === 3 ? '#FCF9F0' : hoverColor}
               ref={(el) => (linkRefs.current[3] = el)}
               onClick={(e) => {
                 handleActivate()
@@ -240,14 +240,14 @@ const Nav = () => {
           <li>
             <StyledMenuLink
               onMouseEnter={() => {
-                setHoverColor('#746658')
+                setHoverColor('#242423')
                 setSelf(4)
               }}
               onMouseLeave={() => {
-                setHoverColor('black')
+                setHoverColor('#FCF9F0')
                 setSelf(null)
               }}
-              acolor={self === 4 ? 'black' : hoverColor}
+              acolor={self === 4 ? '#FCF9F0' : hoverColor}
               ref={(el) => (linkRefs.current[4] = el)}
               onClick={(e) => {
                 handleActivate()
