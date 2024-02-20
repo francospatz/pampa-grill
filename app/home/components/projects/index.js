@@ -48,7 +48,7 @@ const Projects = () => {
   const handleLeave = () => handleHovering(null)
 
   return (
-    <Information ref={sectionTarget} title="The Restaurant">
+    <Information ref={sectionTarget} title="The Restaurant" >
       <ProjectsArray ref={projectsRef} id="projects">
         {projectMap.map((project, index) => (
           <ProjectWrapper

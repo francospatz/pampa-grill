@@ -38,8 +38,8 @@ export default function Project(props) {
 Project.propTypes = {
   title: PropTypes.string.isRequired,
   heroImage: PropTypes.shape({
-    src: PropTypes.string.isRequired,
-    alt: PropTypes.string.isRequired,
+    src: PropTypes.string,
+    alt: PropTypes.string,
     blur: PropTypes.string,
   }),
   about: PropTypes.shape({

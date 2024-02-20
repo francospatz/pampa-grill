@@ -11,9 +11,9 @@ export const HeaderWrapper = styled.header`
   width: 100%;
   z-index: ${Z_INDEX.nav};
   color: ${({ theme }) => `rgb(${theme.text})`};
-  mix-blend-mode: difference;
+  //mix-blend-mode: difference;
   padding: 2vw 0;
-  opacity: 0;
+  //opacity: 0;
 
   ${media.tablet`padding: 1.5rem 0;`}
 
@@ -27,14 +27,15 @@ export const HeaderWrapper = styled.header`
 `
 export const CustomGridWrapper = styled(GridWrapper)`
   align-items: center;
+  justify-content: space-around;
 
-  ${media.tablet`grid-template-columns: 1fr auto;`}
+  //${media.tablet`grid-template-columns: 1fr auto;`}
 `
 export const LinksWrapper = styled.nav`
   display: flex;
   gap: 2vw;
   align-items: center;
-  justify-content: end;
+  justify-content: space-between;
   ${media.tablet`gap: 1rem;`}
 `
 export const StyledMenuContent = styled.div`
@@ -52,7 +53,7 @@ export const StyledMenuContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: #C89868;
   opacity: 0;
 `
 

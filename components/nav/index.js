@@ -89,84 +89,54 @@ const Nav = () => {
     setIsReversed(!isReversed)
   }
 
-  const [hoverColor, setHoverColor] = useState('white')
+  const [hoverColor, setHoverColor] = useState('black')
   const [self, setSelf] = useState(null)
 
   return (
     <>
       <HeaderWrapper ref={sectionRef}>
         <Container>
-          <CustomGridWrapper>
-            <div>
-              <div className="overflow">
-                <CustomLink
-                  href="/"
-                  className="logo enabled"
-                  onClick={(e) => {
-                    e.preventDefault()
-                    isReversed ? handleActivate() : '';
-                    if (path === '/') setTimeout(lenis.scrollTo(0), 1000)
-                    else animatePageOut('/', router, path)
-                  }}
-                >
-                  <img
-                    src="/logovaca.svg"
-                    alt=""
-                    style={{ width: 'auto', height: '4.5vh' }}
-                  />
-                </CustomLink>
-              </div>
-            </div>
-            <LinksWrapper>
-              {/* <div className="overflow">
-                <CustomLink
-                  className="reveal-nav-1 enabled"
-                  href="/about"
-                  onClick={(e) => {
-                    e.preventDefault()
-                    if (path === '/about') lenis.scrollTo(0)
-                    else animatePageOut('/about', router, path)
-                  }}
-                >
-                  About
-                </CustomLink>
-              </div>
+          <div className='nav-header'>
 
-              <div className="overflow">
-                <CustomLink
-                  className="reveal-nav-1 enabled"
-                  onClick={(e) => {
-                    e.preventDefault()
-                    lenis.scrollTo('bottom')
-                  }}
-                >
-                  Contact
-                </CustomLink>
-              </div>
+            <div className="overflow ">
+              <CustomLink
+                href="/"
+                className="logo enabled"
+                onClick={(e) => {
+                  e.preventDefault()
+                  isReversed ? handleActivate() : '';
+                  if (path === '/') setTimeout(lenis.scrollTo(0), 1000)
+                  else animatePageOut('/', router, path)
+                }}
+              >
+                <img
+                  src="/logovaca.svg"
+                  alt=""
+                  style={{ width: 'auto', height: '4.5vh' }}
+                />
+              </CustomLink>
+            </div>
+
+            <div className="overflow ">
               <CustomButton
                 style={{ pointerEvents: 'all' }}
-                id="burger"
-                onClick={() => handleActivate()}
+                className='reveal-nav-2'
+                onClick={(e) => {
+                  e.preventDefault()
+                  window.open('https://www.thefork.es/restaurante/pampa-grill-malaga-r363341/menu', '_blank')
+                }}
               >
-                menu
-              </CustomButton> */}
+                BOOKINGS
+              </CustomButton>
+            </div>
+            <div className="overflow ">
               <ToggleBtn style={{ pointerEvents: 'all' }}
                 id="burger"
                 onClick={() => handleActivate()}>
                 <Burger className={isReversed ? 'active' : ''} />
               </ToggleBtn>
-            </LinksWrapper>
-            {/* <CustomButton
-            className="reveal-nav-2"
-            aria-label="Contact"
-            onClick={(e) => {
-              e.preventDefault()
-              window.open('https://www.thefork.es/restaurante/pampa-grill-malaga-r363341/menu', '_blank')
-            }} style={{ cursor: 'pointer' }}
-          >
-            reservations
-          </CustomButton> */}
-          </CustomGridWrapper>
+            </div>
+          </div>
         </Container>
       </HeaderWrapper>
       <StyledMenuContent ref={overlayRef} className="exclude">
@@ -178,10 +148,10 @@ const Nav = () => {
                 setSelf(0)
               }}
               onMouseLeave={() => {
-                setHoverColor('white')
+                setHoverColor('black')
                 setSelf(null)
               }}
-              acolor={self === 0 ? 'white' : hoverColor}
+              acolor={self === 0 ? 'black' : hoverColor}
               ref={(el) => (linkRefs.current[0] = el)}
               onClick={(e) => {
                 handleActivate()
@@ -202,10 +172,10 @@ const Nav = () => {
                 setSelf(1)
               }}
               onMouseLeave={() => {
-                setHoverColor('white')
+                setHoverColor('black')
                 setSelf(null)
               }}
-              acolor={self === 1 ? 'white' : hoverColor}
+              acolor={self === 1 ? 'black' : hoverColor}
               ref={(el) => (linkRefs.current[1] = el)}
               onClick={(e) => {
                 handleActivate()
@@ -226,10 +196,10 @@ const Nav = () => {
                 setSelf(2)
               }}
               onMouseLeave={() => {
-                setHoverColor('white')
+                setHoverColor('black')
                 setSelf(null)
               }}
-              acolor={self === 2 ? 'white' : hoverColor}
+              acolor={self === 2 ? 'black' : hoverColor}
               ref={(el) => (linkRefs.current[2] = el)}
               onClick={(e) => {
                 handleActivate()
@@ -250,10 +220,10 @@ const Nav = () => {
                 setSelf(3)
               }}
               onMouseLeave={() => {
-                setHoverColor('white')
+                setHoverColor('black')
                 setSelf(null)
               }}
-              acolor={self === 3 ? 'white' : hoverColor}
+              acolor={self === 3 ? 'black' : hoverColor}
               ref={(el) => (linkRefs.current[3] = el)}
               onClick={(e) => {
                 handleActivate()
@@ -274,10 +244,10 @@ const Nav = () => {
                 setSelf(4)
               }}
               onMouseLeave={() => {
-                setHoverColor('white')
+                setHoverColor('black')
                 setSelf(null)
               }}
-              acolor={self === 4 ? 'white' : hoverColor}
+              acolor={self === 4 ? 'black' : hoverColor}
               ref={(el) => (linkRefs.current[4] = el)}
               onClick={(e) => {
                 handleActivate()

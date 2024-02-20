@@ -32,8 +32,7 @@ export const ContentWrapper = styled.div`
 `
 export const TopLine = styled.div`
   display: flex;
-  justify-content: space-between;
-
+  justify-content: center;
   ${media.phablet`flex-direction: column;`}
 `
 export const BottomLine = styled.div`

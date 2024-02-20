@@ -56,6 +56,12 @@ const GlobalStyle = createGlobalStyle`
     display: inline-flex;
   }
 
+  .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   img {
     user-select: none;
     -webkit-user-drag: none;
